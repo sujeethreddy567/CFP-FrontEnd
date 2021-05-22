@@ -289,7 +289,7 @@ UserDashboard1Component.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "mat-toolbar");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Mindler Project");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "COLLEGE FILTER");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "span", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "button", 2);
@@ -689,7 +689,7 @@ LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Tech Assignment [Mindler]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "COLLEGE FILTER");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-tab-group", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-tab", 4);
