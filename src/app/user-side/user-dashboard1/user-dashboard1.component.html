@@ -1,0 +1,75 @@
+<div class="dashboard">
+<mat-toolbar>
+  <span>Mindler Project</span>
+  <span class="example-spacer"></span>
+  <button mat-raised-button class="btn example-spacer " (click)="logout()" color="warn">
+    <span>signout</span>
+    <mat-icon>exit_to_app</mat-icon>
+  </button>
+</mat-toolbar>
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" class="" opened>
+      <div>
+        <mat-card-content>
+          <form class="my-form">
+            <!--SEARCH INPUT-->
+            <mat-form-field class="full-width">
+              <mat-label>Search</mat-label>
+              <input matInput type="text" class="form-control" name="search" [(ngModel)]="search" (ngModelChange) = searchf()/>
+            </mat-form-field>
+            <!--state INPUT-->
+            <mat-form-field  appearance="fill">
+              <mat-label>STATE</mat-label>
+              <mat-select  (selectionChange)="onState($event)">
+                <mat-option *ngFor="let state of statesarr" value={{state}}>{{state}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <!--CITY INPUT-->
+            <mat-form-field appearance="fill">
+              <mat-label>CITY</mat-label>
+              <mat-select (selectionChange)="oncity($event)">
+                <mat-option small *ngFor="let city of citiesarr" value={{city}}>{{city}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div class="facilities">
+              <mat-chip-list #cl="matChipList" selectable multiple>
+                <mat-chip class="small-chip" defaultColor="accent" #c="matChip" *ngFor="let option of facilities" [value]="option" (click)="toggleSelection(c,cl)">
+                    {{option}}
+                </mat-chip>
+              </mat-chip-list>
+            </div>
+          </form>
+          <button mat-raised-button class="filter-button center" (click)="reset()" id="submitButton" color="primary" >
+            Reset Filters
+          </button>
+        </mat-card-content>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="table-cont">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Year</th>
+              <th>State</th>
+              <th>city</th>
+              <th>facilities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let college of colleges">
+              <td class="name">{{ college.name }}</td>
+              <td>{{ college.year_founded }}</td>
+              <td>{{ college.state }}</td>
+              <td>{{ college.city }}</td>
+              <td>
+                <button class="btn-sm" *ngFor="let facility of college.facilities"> {{ facility }} </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
